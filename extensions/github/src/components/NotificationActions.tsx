@@ -131,6 +131,7 @@ export default function NotificationActions({ notification, userId, mutateList }
     try {
       await octokit.activity.deleteThreadSubscription({ thread_id: parseInt(notification.id) });
       await mutateList();
+      await launchCommand({ name: "unread-notifications", type: LaunchType.UserInitiated });
 
       await showToast({
         style: Toast.Style.Success,

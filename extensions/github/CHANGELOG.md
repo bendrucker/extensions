@@ -1,5 +1,9 @@
 # GitHub Changelog
 
+## [Refresh notifications on unsubscribe] - 2025-03-10
+
+- When invoking the `Unsubscribe` action on a notification, the notification list is now refreshed to reflect the change, removing the item.
+
 ## [Settings] - 2025-03-10
 
 - Fix typo in setting label
